@@ -5,7 +5,8 @@
 
 .container-nav-bar,
 .container-arrows,
-.container-footer {
+.container-footer,
+.botton-bar {
   max-width:1170px;
   width: 100%;
   margin: 0 auto;
@@ -711,6 +712,50 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+  }
+}
+
+/* Botton bar  */
+.container-botton-bar{
+  background-color: #141414;
+}
+
+.botton-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.botton-bar-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.botton-bar-text{
+  color: #FFF;
+  font-family: Arimo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1170px) {
+  .botton-bar{
+    padding: 0 16px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .botton-bar{
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    height: 100%;
   }
 }
 
